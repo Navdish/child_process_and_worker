@@ -3,6 +3,7 @@ const http = require('http');
 const os = require('os');
 
 const numCPUs = os.cpus().length;
+console.log('numCPUs: ', numCPUs);
 
 if (cluster.isMaster) {
   console.log(`Master ${process.pid} is running`);
